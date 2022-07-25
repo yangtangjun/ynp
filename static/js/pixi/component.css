@@ -1,0 +1,25 @@
+.section canvas {
+    width: 102% !important;
+    height: 108vh!important;
+    position: absolute!important;
+    top: 0!important;
+    left: 0 !important;
+    transform: scale(1.1)!important;
+    margin-left: -1%;
+}
+
+.scene-nav:focus {
+    outline: none;
+}
+
+.scene-nav--prev {
+    left: 0;
+}
+
+.slide-wrapper {
+    display: none;
+}
+
+.icon--arrow-nav-next {
+    transform: rotate(-180deg);
+}

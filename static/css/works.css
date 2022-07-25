@@ -1,0 +1,123 @@
+body{
+    background: #111111;
+}
+.banner{
+    width: 100%;
+    height: 550px;
+}
+.section{
+    width: 100%;
+    background-color: #111111;
+    overflow: hidden;
+}
+.section .warp{
+    width: 1400px;
+    margin: 150px auto;
+}
+.section .warp .title{
+    border-bottom: 1px solid rgba(34, 34, 34, 1);
+    padding: 0 0 35px 0;
+}
+.section .warp .title span{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 200;
+}
+.section .warp .content{
+    width: 100%;
+    margin: 74px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(34, 34, 34, 1);
+    position: relative;
+    z-index: 1;
+}
+.section .warp .content .list{
+    width: 30%;
+}
+.section .warp .content .list .item {
+    width: 100%;
+    cursor: pointer;
+    margin: 0 0 50px 0;
+}
+.section .warp .content .list .item .picture{
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.section .warp .content .list .item .picture img{
+    width: 100%;
+    transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.section .warp .content .list .item:hover .picture{
+    transform: scale(0.97) rotateX(-3deg);
+}
+.section .warp .content .list .item:hover .picture img{
+    opacity: 0.7;
+}
+.section .warp .content .list .item .text {
+    padding: 35px 0;
+    position: relative;
+}
+.section .warp .content .list .item .text h2{
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 200;
+    font-size: 16px;
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1),opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955),-webkit-transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    letter-spacing: 1px;
+}
+.section .warp .content .list .item .text:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 44px;
+    width: 25px;
+    height: 2px;
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    background-color: #fff;
+}
+.section .warp .content .list .item:hover .text h2{
+    opacity: 1;
+    transform: translateX(45px);
+    transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955),transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),-webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.section .warp .content .list .item:hover .text:after{
+    transform: translateX(0%) scaleX(1);
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.section .warp .more{
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+.section .warp .more p{
+    color: #fff;
+    font-size: 13px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.section .warp .dynamic{
+    width: 100%;
+    margin: 50px 0 0 0;
+    transition: 0.1s;
+    /*transform-origin: 0 100% 0;*/
+    position: relative;
+}
+.section .warp .dynamic img{
+    width: 100%;
+    height: 100%;
+}
+.section .warp .dynamic .text{
+    position: absolute;
+    bottom: 150px;
+    left: -100px;
+    color: #fff;
+}
+.section .warp .dynamic span{
+    font-size: 150px;
+    font-family: Times New Roman, serif;
+    transition: 0.6s;
+}
